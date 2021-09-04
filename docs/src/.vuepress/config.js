@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: '웹 컨텐츠 프로그래밍',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -34,30 +34,40 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: 'Guide',
-        link: '/guide/',
+        text: '홈',
+        link: '/',
       },
       {
-        text: 'Config',
-        link: '/config/'
-      },
-      {
-        text: 'VuePress',
+        text: 'Repository',
         link: 'https://v1.vuepress.vuejs.org'
       }
     ],
-    sidebar: {
-      '/guide/': [
-        {
-          title: 'Guide',
-          collapsable: false,
-          children: [
-            '',
-            'using-vue',
-          ]
-        }
-      ],
-    }
+    sidebar: [
+      {
+        title: '👋 소개',
+        path: '/introduction/',
+        collapsable: false,
+        children: [
+          {
+            title: '소개',
+            path: '/introduction/'
+          }
+        ]
+      },
+      {
+        title: '📒 강의 기록',
+        path: '/review-note/',
+        collapsable: true,
+        children: [
+          '/2021-09-01/'
+        ].map(_ => `/review-note${_}`)
+      },
+      {
+        title: '블로그',
+        path: '/blog/',
+        collapsable: false,
+      }
+    ]
   },
 
   /**

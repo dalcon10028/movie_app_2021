@@ -1,15 +1,8 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
+heroImage: https://i.ibb.co/y5HVH48/584830f5cef1014c0b5e4aa1.png
 tagline: 
-actionText: Quick Start →
-actionLink: /guide/
-features:
-- title: Feature 1 Title
-  details: Feature 1 Description
-- title: Feature 2 Title
-  details: Feature 2 Description
-- title: Feature 3 Title
-  details: Feature 3 Description
+actionText: 문서보기 →
+actionLink: /introduction/
 footer: Made by dalcon with ❤️
 ---
