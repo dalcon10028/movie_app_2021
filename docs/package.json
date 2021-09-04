@@ -1,0 +1,19 @@
+{
+  "name": "movie-app",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "authors": {
+    "name": "dalcon",
+    "email": "dalcon10280@gmail.com"
+  },
+  "repository": "/movie-app",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
