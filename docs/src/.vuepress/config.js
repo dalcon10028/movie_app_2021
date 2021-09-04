@@ -1,4 +1,5 @@
-const { description } = require('../../package')
+const { description } = require('../../package');
+const sidebar = require('./sidebar');
 
 module.exports = {
   /**
@@ -42,32 +43,7 @@ module.exports = {
         link: 'https://v1.vuepress.vuejs.org'
       }
     ],
-    sidebar: [
-      {
-        title: '👋 소개',
-        path: '/introduction/',
-        collapsable: false,
-        children: [
-          {
-            title: '소개',
-            path: '/introduction/'
-          }
-        ]
-      },
-      {
-        title: '📒 강의 기록',
-        path: '/review-note/',
-        collapsable: true,
-        children: [
-          '/2021-09-01/'
-        ].map(_ => `/review-note${_}`)
-      },
-      {
-        title: '블로그',
-        path: '/blog/',
-        collapsable: false,
-      }
-    ]
+    sidebar
   },
 
   /**
