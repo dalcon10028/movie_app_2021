@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Container, useMediaQuery, CssBaseline } from '@material-ui/core';
+import {
+  Container,
+  CssBaseline,
+  Fab,
+  Icon,
+  makeStyles,
+} from '@material-ui/core';
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import Home from './routes/Home';
 import About from './routes/About';
@@ -9,21 +15,31 @@ import NotFound from './routes/NotFound';
 import Navigation from './components/Navigation';
 import './reset.css';
 
-function App() {
-  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+const useStyles = makeStyles({
+  fab: {
+    position: 'fixed',
+    bottom: 16,
+    right: 16,
+  },
+});
 
-  const theme = React.useMemo(
-    () =>
-      createTheme({
-        palette: {
-          type: prefersDarkMode ? 'dark' : 'light',
-        },
-      }),
-    [prefersDarkMode],
-  );
+function App() {
+  const [darkState, setDarkState] = useState(true);
+  const palletType = darkState ? 'dark' : 'light';
+  const darkTheme = createTheme({
+    palette: {
+      type: palletType,
+    },
+  });
+
+  const classes = useStyles();
+
+  const handleThemeChange = () => {
+    setDarkState(!darkState);
+  };
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <Router>
         <Container mt={10}>
@@ -36,6 +52,9 @@ function App() {
           </Switch>
         </Container>
       </Router>
+      <Fab color="primary" className={classes.fab} onClick={handleThemeChange}>
+        <Icon>{darkState ? 'light_mode' : 'dark_mode'}</Icon>
+      </Fab>
     </ThemeProvider>
   );
 }
