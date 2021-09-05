@@ -6,17 +6,15 @@ module.exports = [
     children: [
       {
         title: '소개',
-        path: '/introduction/'
-      }
-    ]
+        path: '/introduction/',
+      },
+    ],
   },
   {
     title: '📒 강의 기록',
     path: '/review-note/',
     collapsable: true,
-    children: [
-      '/2021-09-01/'
-    ].map(_ => `/review-note${_}`)
+    children: ['/2021-09-01/'].map((_) => `/review-note${_}`),
   },
   {
     title: '블로그',
@@ -25,8 +23,12 @@ module.exports = [
     children: [
       {
         title: '클래스형 컴포넌트 vs 함수형 컴포넌트',
-        path: '/blog/react-func-class/'
-      }
-    ]
-  }
-]
+        path: '/blog/react-func-class/',
+      },
+      {
+        title: 'Chocolatey를 이용한 실습 인스톨러',
+        path: '/blog/chocolatey/',
+      },
+    ],
+  },
+];

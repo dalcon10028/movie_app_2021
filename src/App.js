@@ -16,6 +16,10 @@ import Navigation from './components/Navigation';
 import './reset.css';
 
 const useStyles = makeStyles({
+  container: {
+    marginTop: 50,
+  },
+
   fab: {
     position: 'fixed',
     bottom: 16,
@@ -42,7 +46,7 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <Router>
-        <Container mt={10}>
+        <Container className={classes.container}>
           <Navigation />
           <Switch>
             <Route path="/about" component={About} />
