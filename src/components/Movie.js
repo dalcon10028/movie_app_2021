@@ -3,38 +3,71 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import './Movie.css';
+import Rating from '@material-ui/lab/Rating';
+import {
+  Card,
+  CardActionArea,
+  CardContent,
+  CardMedia,
+  Chip,
+  makeStyles,
+  Typography,
+} from '@material-ui/core';
 
-function Movie({ id, year, title, summary, poster, genres }) {
+const useStyles = makeStyles((theme) => ({
+  root: {
+    borderRadius: 15,
+  },
+  media: {
+    height: 300,
+  },
+  title: {
+    fontSize: 14,
+  },
+  genres: {
+    marginTop: 7,
+    marginBottom: 7,
+    '& > *': {
+      marginRight: theme.spacing(1),
+    },
+  },
+}));
+
+function Movie({ id, year, title, summary, poster, genres, rating }) {
+  const classes = useStyles();
+
   return (
-    <Link
-      to={{
-        pathname: '/movie-detail',
-        state: {
-          year,
-          title,
-          summary,
-          poster,
-          genres,
-        },
-      }}
-    >
-      <div className="movie">
-        <img src={poster} alt={title} title={title} />
-        <div className="movie__data">
-          <h3 className="movie__title">{title}</h3>
-          <h5 className="movie__year">{year}</h5>
-          <ul className="movie__genres">
-            {genres.map((genre, index) => (
-              <li key={index} className="genres__genre">
-                {genre}
-              </li>
+    <Card className={classes.root} elevation={20}>
+      <CardActionArea>
+        <CardMedia className={classes.media} image={poster} title={title} />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            {title}
+          </Typography>
+          <Typography
+            className={classes.title}
+            color="textSecondary"
+            gutterBottom
+          >
+            {year}
+          </Typography>
+          <Rating
+            name="half-rating-read"
+            defaultValue={rating / 2}
+            precision={0.1}
+            readOnly
+          />
+          <div className={classes.genres}>
+            {genres.map((genre) => (
+              <Chip label={genre} color="primary" size="small" />
             ))}
-          </ul>
-          <p className="movie__summary">{summary.slice(0, 140)}...</p>
-        </div>
-      </div>
-    </Link>
+          </div>
+          <Typography variant="body2" color="textSecondary" component="p">
+            {summary.slice(0, 100)}...
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
   );
 }
 
@@ -45,6 +78,7 @@ Movie.propTypes = {
   summary: PropTypes.string.isRequired,
   poster: PropTypes.string.isRequired,
   genres: PropTypes.arrayOf(PropTypes.string).isRequired,
+  rating: PropTypes.number.isRequired,
 };
 
 export default Movie;
