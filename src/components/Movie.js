@@ -38,7 +38,7 @@ function Movie({ id, year, title, summary, poster, genres, rating }) {
 
   return (
     <Card className={classes.root} elevation={20}>
-      <CardActionArea>
+      <CardActionArea component={Link} to="/movie-detail">
         <CardMedia className={classes.media} image={poster} title={title} />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">

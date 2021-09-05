@@ -1,12 +1,13 @@
 import React from 'react';
-import { HashRouter, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Container, useMediaQuery, CssBaseline } from '@material-ui/core';
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import Home from './routes/Home';
 import About from './routes/About';
 import Detail from './routes/Detail';
+import NotFound from './routes/NotFound';
 import Navigation from './components/Navigation';
-// import './App.css';
+import './reset.css';
 
 function App() {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
@@ -24,14 +25,17 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <HashRouter>
-        <Container>
+      <Router>
+        <Container mt={10}>
           <Navigation />
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/movie-detail" component={Detail} />
+          <Switch>
+            <Route path="/about" component={About} />
+            <Route path="/movie-detail" component={Detail} />
+            <Route path="/" exact component={Home} />
+            <Route component={NotFound} />
+          </Switch>
         </Container>
-      </HashRouter>
+      </Router>
     </ThemeProvider>
   );
 }

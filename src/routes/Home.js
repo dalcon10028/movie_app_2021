@@ -37,7 +37,7 @@ class App extends React.Component {
         ) : (
           <>
             {movies.map((movie) => (
-              <Grid item xs={12} sm={4}>
+              <Grid item xs={12} sm={4} key={movie.id}>
                 <Movie
                   key={movie.id}
                   id={movie.id}
