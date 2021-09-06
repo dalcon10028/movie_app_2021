@@ -17,7 +17,7 @@ module.exports = [
     children: ['/2021-09-01/'].map((_) => `/review-note${_}`),
   },
   {
-    title: '블로그',
+    title: '🌈블로그',
     path: '/blog/',
     collapsable: false,
     children: [

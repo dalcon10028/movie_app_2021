@@ -43,7 +43,7 @@ module.exports = {
       },
       {
         text: 'Repository',
-        link: 'https://v1.vuepress.vuejs.org',
+        link: 'https://github.com/dalcon10028/web-contents-programming',
       },
     ],
     sidebar,
