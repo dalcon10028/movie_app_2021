@@ -4,7 +4,7 @@
 
 ## 📁 Table Of Contents
 
-| -     | 제목                                                                                                      | 날짜       | 비고 |
-| ----- | --------------------------------------------------------------------------------------------------------- | ---------- | ---- |
-| 1주차 | [OT](https://github.com/dalcon10028/web-contents-programming/tree/master/docs/src/review-note/2021-09-01) | 2021-09-01 |      |
-|       |                                                                                                           | 2021-09-08 |      |
+| -     | 제목                                                                                                                    | 날짜       | Vuepress                                                                                                                |
+| ----- | ----------------------------------------------------------------------------------------------------------------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------- |
+| 1주차 | [OT](https://github.com/dalcon10028/web-contents-programming/tree/master/docs/src/review-note/2021-09-01)               | 2021-09-01 | [OT](https://github.com/dalcon10028/web-contents-programming/tree/master/docs/src/review-note/2021-09-01)               |
+| 2주차 | [Create React App](https://github.com/dalcon10028/web-contents-programming/tree/master/docs/src/review-note/2021-09-08) | 2021-09-08 | [Create React App](https://github.com/dalcon10028/web-contents-programming/tree/master/docs/src/review-note/2021-09-08) |
