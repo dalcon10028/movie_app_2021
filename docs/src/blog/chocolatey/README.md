@@ -4,6 +4,11 @@
 
 ## 다운로드
 
+::: tip
+PowerShell을 관리자 권한으로 실행하셔서 실행하시면 됩니다. <br />
+`./web-contents-programming-installer.bat`
+:::
+
 ## [다운로드](https://comgom.s3.ap-northeast-2.amazonaws.com/web-contents-programming-installer.bat)
 
 ### 설치목록

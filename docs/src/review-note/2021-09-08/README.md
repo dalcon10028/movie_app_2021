@@ -42,8 +42,12 @@ git push origin master
 
 ## 리액트 최초 렌더링
 
-`/public/index.html`파일에 `<div id="root"></div>`에 `App`컴포넌트를 삽입합니다.
+`/public/index.html`파일에 `<div id="root"></div>`에 `App` [컴포넌트](./#용어)를 삽입합니다.
 
 ```javascript
 ReactDOM.render(<App />, document.getElementById('root'));
 ```
+
+### 용어
+
+- 컴포넌트: 프로그래밍에 있어 재사용이 가능한 각각의 독립된 모듈
