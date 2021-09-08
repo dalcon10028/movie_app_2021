@@ -5,7 +5,7 @@
 ## 다운로드
 
 ::: tip
-PowerShell을 관리자 권한으로 실행하셔서 실행하시면 됩니다. <br />
+PowerShell을 관리자 권한으로 실행하셔서 파일위치로 이동하신 후 실행하시면 됩니다. <br />
 `./web-contents-programming-installer.bat`
 :::
 
