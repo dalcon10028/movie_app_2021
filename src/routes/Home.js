@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/sort-comp */
 /* eslint-disable react/state-in-constructor */
-import React from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import Grid from '@material-ui/core/Grid';
 import Movie from '../components/Movie';

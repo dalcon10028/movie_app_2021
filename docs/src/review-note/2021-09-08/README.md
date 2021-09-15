@@ -101,14 +101,3 @@ const element = React.createElement(
   'Hello, world!',
 );
 ```
-
-## Props
-
-간단히 말하면 컴포넌트에서 컴포넌트로 전달하는 데이터를 말합니다.
-컴포넌트를 효율적으로 재사용 하기위해 함수의 매개변수와 비슷한 역할을 합니다.
-
-```javascript
-function Welcome(props) {
-  return <h1>Hello, {props.name}</h1>;
-}
-```
