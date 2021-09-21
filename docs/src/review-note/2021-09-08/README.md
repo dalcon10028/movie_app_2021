@@ -3,7 +3,7 @@
 ## 리액트 기초개념
 
 ::: tip
-[깃허브에서 보기](https://github.com/dalcon10028/web-contents-programming/tree/master/docs/src/review-note/2021-09-08)
+[깃허브에서 보기](https://dalcon10028.github.io/movie_app_2021/tree/master/docs/src/review-note/2021-09-08)
 :::
 
 ## Create React App의 폴더 구조
