@@ -1,5 +1,5 @@
 {
-  "name": "web-contents-programming",
+  "name": "movie_app_2021",
   "version": "0.0.1",
   "description": "2021년도 2학기 웹 컨텐츠 프로그래밍 (react) 관련 문서 저장소 입니다.",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "name": "dalcon",
     "email": "dalcon10280@gmail.com"
   },
-  "repository": "/web-contents-programming",
+  "repository": "/movie_app_2021",
   "scripts": {
     "dev": "vuepress dev src",
     "build": "vuepress build src",
@@ -18,7 +18,7 @@
   "devDependencies": {
     "vuepress": "^1.5.3"
   },
-  "homepage": "https://dalcon10028.github.io/web-contents-programming/",
+  "homepage": "https://dalcon10028.github.io/movie_app_2021/",
   "dependencies": {
     "gh-pages": "^3.2.3"
   }

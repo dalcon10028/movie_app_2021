@@ -10,7 +10,7 @@ module.exports = {
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
   description: description,
-  base: '/web-contents-programming/',
+  base: '/movie_app_2021/',
   /**
    * Extra tags to be injected to the page HTML `<head>`
    *
@@ -43,7 +43,7 @@ module.exports = {
       },
       {
         text: 'Repository',
-        link: 'https://github.com/dalcon10028/web-contents-programming',
+        link: 'https://github.com/dalcon10028/movie_app_2021',
       },
     ],
     sidebar,
