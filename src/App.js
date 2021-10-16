@@ -27,7 +27,7 @@ const useStyles = makeStyles({
   },
 });
 
-function App() {
+export default () => {
   const [darkState, setDarkState] = useState(true);
   const palletType = darkState ? 'dark' : 'light';
   const darkTheme = createTheme({
@@ -61,5 +61,4 @@ function App() {
       </Fab>
     </ThemeProvider>
   );
-}
-export default App;
+};

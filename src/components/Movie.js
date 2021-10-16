@@ -33,12 +33,18 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Movie({ id, year, title, summary, poster, genres, rating }) {
+const Movie = ({ id, year, title, summary, poster, genres, rating }) => {
   const classes = useStyles();
 
   return (
     <Card className={classes.root} elevation={20}>
-      <CardActionArea component={Link} to="/movie-detail">
+      <CardActionArea
+        component={Link}
+        to={{
+          pathname: '/movie-detail',
+          state: { id, year, title, summary, poster, genres, rating },
+        }}
+      >
         <CardMedia className={classes.media} image={poster} title={title} />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
@@ -69,7 +75,7 @@ function Movie({ id, year, title, summary, poster, genres, rating }) {
       </CardActionArea>
     </Card>
   );
-}
+};
 
 Movie.propTypes = {
   id: PropTypes.number.isRequired,
