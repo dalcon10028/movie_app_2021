@@ -3,7 +3,7 @@
 ## Component LifeCycle
 
 ::: tip
-[깃허브에서 보기](https://dalcon10028.github.io/movie_app_2021/tree/master/docs/src/review-note/2021-10-06)
+[깃허브에서 보기](https://github.com/dalcon10028/movie_app_2021/tree/master/docs/src/review-note/2021-10-06)
 :::
 
 ## 클래스형 컴포넌트

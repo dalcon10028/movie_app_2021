@@ -3,7 +3,7 @@
 ## Movie 컴포넌트 수정하기
 
 ::: tip
-[깃허브에서 보기](https://dalcon10028.github.io/movie_app_2021/tree/master/docs/src/review-note/2021-10-13)
+[깃허브에서 보기](https://github.com/dalcon10028/movie_app_2021/tree/master/docs/src/review-note/2021-10-13)
 :::
 
 ## 영화 앱 전체 모습 수정하기

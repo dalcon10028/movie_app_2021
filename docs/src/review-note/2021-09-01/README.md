@@ -3,7 +3,7 @@
 ## OT
 
 ::: tip
-[깃허브에서 보기](https://dalcon10028.github.io/movie_app_2021/tree/master/docs/src/review-note/2021-09-01)
+[깃허브에서 보기](https://github.com/dalcon10028/movie_app_2021/tree/master/docs/src/review-note/2021-09-01)
 :::
 
 ## 강의 운영 및 평가 계획

@@ -3,7 +3,7 @@
 ## 컴포넌트간 데이터 전달하기
 
 ::: tip
-[깃허브에서 보기](https://dalcon10028.github.io/movie_app_2021/tree/master/docs/src/review-note/2021-09-15)
+[깃허브에서 보기](https://github.com/dalcon10028/movie_app_2021/tree/master/docs/src/review-note/2021-09-15)
 :::
 
 ## Props
