@@ -14,3 +14,4 @@
 | 6주차 | [Movie 컴포넌트 수정하기](https://github.com/dalcon10028/movie_app_2021/tree/master/docs/src/review-note/2021-10-13)      | 2021-10-13 | [Movie 컴포넌트 수정하기](https://dalcon10028.github.io/movie_app_2021/review-note/2021-10-13/)      |
 | 7주차 | [react-router-dom](https://github.com/dalcon10028/movie_app_2021/tree/master/docs/src/review-note/2021-10-27)             | 2021-10-27 | [react-router-dom](https://dalcon10028.github.io/movie_app_2021/review-note/2021-10-27/)             |
 | 8주차 | [영화 앱에 여러 기능 추가하기](https://github.com/dalcon10028/movie_app_2021/tree/master/docs/src/review-note/2021-11-03) | 2021-11-03 | [영화 앱에 여러 기능 추가하기](https://dalcon10028.github.io/movie_app_2021/review-note/2021-11-03/) |
+| 9주차 | [UseState](https://github.com/dalcon10028/movie_app_2021/tree/master/docs/src/review-note/2021-11-14)                     | 2021-11-14 | [UseState](https://dalcon10028.github.io/movie_app_2021/review-note/2021-11-14/)                     |
